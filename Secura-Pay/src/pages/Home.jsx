@@ -58,7 +58,7 @@ const Home = () => {
             <img className="photo" src={assets.profile} alt="user profile" />
             <div className="info">
               <div className="info__username">Aditya Yadav</div>
-              <div className="info__upiid">AdityaYadav@gpayupi</div>
+              <div className="info__upiid">AdityaYadav@spayupi</div>
             </div>
           </div>
           <div className="header__option">
