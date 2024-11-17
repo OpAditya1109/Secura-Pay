@@ -265,8 +265,7 @@ body {
 }
 
 #scanner {
-    top: 0;
-    left: 0;
+   
     width: 100%;
     height: 100%;
     display: flex;
@@ -277,7 +276,7 @@ body {
 
 #video {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover; /* Ensure video covers the entire area */
     position: absolute;
     z-index: 1; /* Place video behind the scanner */
@@ -285,10 +284,16 @@ body {
 
 /* Scanning frame */
 .scanner-frame {
-    position: relative;
-    width: 300px;  /* Adjust this to set the size of the scanner */
-    height: 300px; /* Adjust height as needed */
-    z-index: 2;  /* Keep it above the video */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* Center the element */
+  width: 300px;  /* Adjust this to set the size of the scanner */
+  height: 300px; /* Adjust height as needed */
+  z-index: 2;  /* Keep it above the video */
 }
 
 /* Corner borders */
