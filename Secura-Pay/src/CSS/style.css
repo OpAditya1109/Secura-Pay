@@ -60,21 +60,21 @@ body {
 }
 
 
-.scanner_click{
-  width: 350px;
+.scanner_click {
+  width: 200px;
   height: 100px;
-  border-radius:50%;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: white; */
-  transform: rotate(90deg);
-
+  background-color: white;
+  overflow: hidden; /* Ensures content doesn't overflow the container */
 }
 
-.scanner_click img{
-  height: 50px;
-  width: 50px;
+.scanner_click img {
+  width: 100%;        /* Make the image fill the container's width */
+  height: auto;       /* Maintain aspect ratio */
+  transform: scale(1.8); /* Scale up the image to make it appear larger */
 }
 /*MAIN*/
 
@@ -129,7 +129,7 @@ body {
 }
 .slider .logo-wrap__img {
   position: relative;
-  width: 7rem;
+  width: 20rem;
 }
 .slider__contact {
   display: flex;
