@@ -227,7 +227,7 @@ const Home = () => {
       </div>
       <div id="scanner" style={{ display: isScanning ? "block" : "none" }}>
          <button id="close-button" onClick={stopScanning}>
-            <i className="ri-close-large-line" />
+             <img src={assets.close} alt="Close" />
           </button>
         <video id="video" style={{ width: "100%", height: "auto" }} />
         <div className="scanner-frame">
