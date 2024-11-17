@@ -226,11 +226,12 @@ const Home = () => {
         </section>
       </div>
       <div id="scanner" style={{ display: isScanning ? "block" : "none" }}>
-        <video id="video" style={{ width: "100%", height: "auto" }} />
-        <div className="scanner-frame">
-          <button id="close-button" onClick={stopScanning}>
+         <button id="close-button" onClick={stopScanning}>
             <i className="ri-close-large-line" />
           </button>
+        <video id="video" style={{ width: "100%", height: "auto" }} />
+        <div className="scanner-frame">
+         
           <div className="scanner-border top-left" />
           <div className="scanner-border top-right" />
           <div className="scanner-border bottom-left" />
