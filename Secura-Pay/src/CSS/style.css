@@ -378,7 +378,8 @@ html,body{
   transform: translate(-50%, -50%); /* Adjust positioning to center exactly */
   z-index: 1000; /* Ensure it appears above other content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for fading effect */
+  transition: opacity 0.3s ease-in-out;
+    width:90%;
 }
 
 /* Optional: To make it disappear after some time */
