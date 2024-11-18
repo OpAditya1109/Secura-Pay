@@ -229,7 +229,7 @@ const Home = () => {
          <button id="close-button" onClick={stopScanning}>
              <img src={assets.close} alt="Close" />
           </button>
-        <video id="video" style={{ width: "100%", height: "auto" }} />
+        <video id="video" style={{ width: "100%", height: "100%" }} />
         <div className="scanner-frame">
          
           <div className="scanner-border top-left" />
