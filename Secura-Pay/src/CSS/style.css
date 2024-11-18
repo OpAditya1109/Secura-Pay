@@ -363,7 +363,6 @@ html,body{
   height: 100%;
   width: 100%;
 }
-
 .qr-result {
   background-color: #ffcc00; /* Yellow background for attention */
   color: #fff; /* White text color */
@@ -378,8 +377,10 @@ html,body{
   transform: translate(-50%, -50%); /* Adjust positioning to center exactly */
   z-index: 1000; /* Ensure it appears above other content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
-  transition: opacity 0.3s ease-in-out;
-    width:90%;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for fading effect */
+  width: 90%;
+  word-wrap: break-word; /* Prevent text overflow */
+  white-space: normal; /* Allow text to wrap to the next line */
 }
 
 /* Optional: To make it disappear after some time */
@@ -387,4 +388,3 @@ html,body{
   opacity: 0;
   visibility: hidden;
 }
-
