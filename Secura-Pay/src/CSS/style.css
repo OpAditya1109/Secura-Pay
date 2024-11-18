@@ -34,7 +34,7 @@ body {
   z-index: 50;
   width: 100%;
   color: #fff;
-  background-color: #3FBBF7;
+  background-color: #1973e8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,7 +84,7 @@ body {
   width: 100%;
   margin-top: 6rem;
   min-height: calc(100vh - 6rem);
-  background-color: #3FBBF7;
+  background-color: #1973e8;
   display: flex;
   justify-content: center; }
 .main .tez {
@@ -96,7 +96,7 @@ body {
   width: 13rem;
   height: 13rem;
   margin-bottom: 2rem;
-  border: 1.5rem solid #4659B5;
+  border: 1.5rem solid #1567d2;
   border-radius: 50%;
   background-color: #fff;
   display: flex;
@@ -373,9 +373,9 @@ html,body{
   font-weight: bold; /* Make text bold */
   text-align: center; /* Center-align the text */
   position: fixed; /* Make it fixed on the screen */
-  top: 20px; /* Place it near the top */
+  top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust positioning to be exactly centered */
+  transform: translate(-50%, -50%); /* Adjust positioning to center exactly */
   z-index: 1000; /* Ensure it appears above other content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
   transition: opacity 0.3s ease-in-out; /* Smooth transition for fading effect */
@@ -386,3 +386,4 @@ html,body{
   opacity: 0;
   visibility: hidden;
 }
+
