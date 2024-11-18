@@ -19,7 +19,14 @@ const Home = () => {
           console.log(result);
           setQrCodeResult(result.text); // Update QR code result state
           stopScanning(); // Stop scanning once the QR code is read
+          setTimeout(() => {
+            const qrResultElement = document.querySelector(".qr-result");
+            if (qrResultElement) {
+              qrResultElement.classList.add("hide");
+            }
+          }, 3000); // Hide after 3 seconds
         })
+
         .catch((err) => {
           console.error(err);
           alert("Error: " + err); // Display error for debugging
@@ -58,7 +65,7 @@ const Home = () => {
             <img className="photo" src={assets.profile} alt="user profile" />
             <div className="info">
               <div className="info__username">Aditya Yadav</div>
-              <div className="info__upiid">AdityaYadav@spayupi</div>
+              <div className="info__upiid">AdityaYadav@gpayupi</div>
             </div>
           </div>
           <div className="header__option">
@@ -226,12 +233,11 @@ const Home = () => {
         </section>
       </div>
       <div id="scanner" style={{ display: isScanning ? "block" : "none" }}>
-         <button id="close-button" onClick={stopScanning}>
-             <img src={assets.close} alt="Close" />
-          </button>
+        <button id="close-button" onClick={stopScanning}>
+          <i className="ri-close-large-line" />
+        </button>
         <video id="video" style={{ width: "100%", height: "100%" }} />
         <div className="scanner-frame">
-         
           <div className="scanner-border top-left" />
           <div className="scanner-border top-right" />
           <div className="scanner-border bottom-left" />
